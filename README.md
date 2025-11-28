@@ -1,117 +1,124 @@
-# 🧑‍💼 HR Attrition Analytics – Power BI Dashboard
-
-Proyek ini berisi analisis mendalam mengenai Employee Attrition (karyawan keluar) pada sebuah perusahaan. Dashboard ini dikembangkan untuk memberikan pemahaman yang lebih baik kepada bagian HR terkait faktor penyebab attrition, area yang berisiko tinggi, serta rekomendasi solusi yang berbasis data.
+# 📊 Employee Attrition Analytics Dashboard  
+*HR Data Analytics Case Study | Portfolio Project*
 
 ---
 
-## 📊 Dashboard Collection
+## 🎯 Business Problem Statement
+Perusahaan mengalami tingkat attrition (karyawan keluar) yang cukup tinggi yaitu **16.12%**, melebihi toleransi industri (di bawah 10%). HR kehilangan visibilitas terhadap:
 
-### 1️⃣ Summary Dashboard
-Insight utama:
-- Total Employee
-- Attrition Rate
-- High Risk Employee %
-- Avg. Tenure & Salary
-- Attrition berdasarkan Tenure, Age Group, Salary Bracket, Department & Job Role Risk
+- Departemen & posisi mana yang paling berisiko
+- Faktor apa yang paling memengaruhi karyawan memutuskan keluar
+- Strategi retensi apa yang sebaiknya diprioritaskan
 
-📷 Screenshot  
-![Summary Dashboard](Images/Summary Dashboard.png)
+Dashboard ini dikembangkan untuk membantu HR mengambil keputusan berbasis **data-driven insights** dalam menurunkan employee turnover.
+
+---
+
+## 🧩 Executive Summary — Key Findings & Insights
+
+| Temuan Utama | Detail | Dampak Bisnis |
+|--------------|--------|---------------|
+| Attrition sangat tinggi pada **Sales & R&D** | Sales Representative: **39.76%**, Lab Technician: **23.94%** | Rugikan revenue & inovasi perusahaan |
+| Tingkat satisfaction rendah pada high-risk positions | Rata-rata **≤ 2.75/4** | Tinggi risiko resign |
+| Gaji rendah paling banyak pada karyawan resign | Median salary resign < staying employees | Kompetitif kompensasi lemah |
+| Karyawan baru lebih banyak keluar | 0–2 years tenure: **~77% attrition** | Reputasi onboarding & manajemen buruk |
+| Overtime & Travel berdampak besar pada Sales | Attrition meningkat **>30%** | Burnout tinggi |
+
+📌 **Attrition Risk Level Saat Ini: Medium Risk (6.53% high-risk employees)**  
+➡ Target perbaikan: Pengurangan attrition min. **-5% dalam 1 tahun** melalui strategi retensi terpadu.
+
+---
+
+## 📌 Actionable Recommendations
+
+| Area | Rekomendasi | Prioritas |
+|------|-------------|----------|
+| Sales Position | Redesign komisi, perbaiki workload, pelatihan skill | ⭐⭐⭐⭐⭐ |
+| R&D Position | Career development & recognition system | ⭐⭐⭐⭐ |
+| Compensation | Benchmarking salary & retensi insentif | ⭐⭐⭐⭐ |
+| New Employee Experience | Strengthen onboarding, mentorship 6 bulan | ⭐⭐⭐⭐⭐ |
+| Work-Life Balance | Kontrol overtime & travel rotation | ⭐⭐⭐ |
+| Employee Satisfaction | Program peningkatan engagement & feedback rutin | ⭐⭐⭐⭐ |
+
+---
+
+## 📈 Dashboard Preview
+
+### 1️⃣ Attrition Report Dashboard
+Analitik per posisi: attrition %, high-risk %, performance, dan satisfaction score  
+![Attrition Report Dashboard](Images/Attrition%20Report%20Dashboard.png)
 
 ---
 
 ### 2️⃣ Root Cause Analysis Dashboard
-Fokus faktor penyebab attrition:
-- Overtime vs Attrition Impact
-- Salary Gap (Stay vs Attrition)
-- Business Travel Pressure
-- Irregular Working Hours
-- Satisfaction Radar:
-  - Job
-  - Environment
-  - Relationship
-  - Work-Life Balance
+Mengidentifikasi akumulasi faktor penyebab attrition  
+![Root Cause Analysis Dashboard](Images/Root%20Cause%20Analysis%20Dashboard.png)
+
+---
+
+### 3️⃣ Summary Dashboard
+Overall company attrition metrics dan distribusi demografi  
+![Summary Dashboard](Images/Summary%20Dashboard.png)
+
+---
+
+## 🛠 Tools & Technologies
+| Tools | Penggunaan |
+|------|------------|
+| **Power BI** | Dashboard, data modelling, visualization |
+| **Excel / CSV** | Data preprocessing & cleaning |
+| **DAX** | KPI calculation & risk scoring |
+
+---
+
+## 🧪 Metrics & Calculation Highlights
+- **Attrition Rate =** (Employees Left / Total Employees)
+- **High Risk Score =** kombinasi:
+  - Satisfaction
   - Performance
-
-📷 Screenshot  
-![Root Cause Analysis Dashboard](./assets/Root%20Cause%20Analysis%20Dashboard.png)
-
----
-
-### 3️⃣ Attrition Report Dashboard
-Analisis mendalam posisi & departemen paling berisiko:
-- Attrition Rate %
-- High Risk Employee %
-- Performance Score
-- Lowest Satisfaction Position
-- Salary Impact
-
-📷 Screenshot  
-![Attrition Report Dashboard](./assets/Attrition%20Report%20Dashboard.png)
+  - Overtime & Travel Burden
+  - Compensation gap
+- **Benchmarking salary** vs attrition groups
 
 ---
 
-## 🧠 Key Business Insights
-
-| Temuan Utama | Dampak pada Bisnis | Arah Strategi |
-|-------------|------------------|---------------|
-| Attrition tertinggi di Sales & R&D | Pengaruh penjualan & inovasi | Program engagement khusus untuk kedua departemen |
-| Overtime tinggi → Resign meningkat signifikan | Risiko burnout | Workload balancing & Overtime control |
-| Salary keluar lebih rendah daripada yang bertahan | Perasaan undervalued | Salary band restructuring |
-| Job Satisfaction & Environment Satisfaction rendah pada posisi teknis | Produktivitas & motivasi turun | Leadership, environment & career development improvement |
-| Tenure < 3 tahun paling berisiko resign | Hilangnya talent lebih cepat | Retention program pada 3 tahun pertama |
+## 📚 Dataset Reference
+IBM HR Analytics Employee Attrition Dataset  
+⚠ Data telah diolah ulang untuk kebutuhan studi kasus ini.
 
 ---
 
-## 🛠 Dataset
+## 🎯 Skills Demonstrated
 
-- WA_Fn-UseC_-HR-Employee-Attrition.csv  
-(IBM HR Analytics Employee Attrition Dataset)
-
-Fields relevan:
-Attrition, Department, JobRole, MonthlyIncome, JobSatisfaction,
-PerformanceRating, WorkLifeBalance, EnvironmentSatisfaction,
-YearsAtCompany, Overtime, BusinessTravel
-
-
----
-
-## 🧾 Tools & Technology
-
-| Tools | Fungsi |
-|------|--------|
-| Power BI Desktop | ETL + Dashboard |
-| Custom Visuals | Visualisasi analitik lanjutan |
-| DAX Measures | Perhitungan KPI |
-
-Custom visuals diambil dari:
-> https://github.com/DataChant/PowerBI-Visuals-AppSource/tree/main/All%20Visuals
+| Skills | Level |
+|-------|------|
+| HR Analytics & KPI Development | ⭐⭐⭐⭐⭐ |
+| DAX & Data Modelling | ⭐⭐⭐⭐ |
+| Business Problem Solving & Storytelling | ⭐⭐⭐⭐⭐ |
+| Visualization Design for Executives | ⭐⭐⭐⭐ |
+| Root Cause & Risk Analysis | ⭐⭐⭐⭐⭐ |
 
 ---
 
-## 🎯 Business Goals
+## 👨‍💻 About This Project
+Proyek ini dibuat sebagai bagian dari **portfolio profesional** saya dalam bidang:
 
-- Menurunkan attrition rate secara berkelanjutan
-- Mengidentifikasi talent berisiko tinggi
-- Memberikan HR decision support yang terukur
-- Menyusun strategi employee retention jangka panjang
+> Data Analytics | HR Analytics | Business Decision Support
 
----
-
-## 🔄 Project Roadmap
-
-- [x] Summary Dashboard
-- [x] Root Cause Analysis Dashboard
-- [x] Attrition Report by Department & Job Role
-- [ ] Action Plan Dashboard (HR Executable Strategy)
-- [ ] Power BI Service Automation
+Tujuan utama proyek ini adalah menunjukkan kemampuan saya dalam:
+- Mengubah data mentah menjadi **insight yang berdampak**
+- Membantu **pengambilan keputusan HR** dengan strategi retensi yang jelas
+- Mendesain dashboard interaktif yang **siap untuk eksekutif (C-Level)**
 
 ---
 
-## 👨‍💻 Author
+## 📬 Contact
+Jika Anda tertarik berdiskusi atau kolaborasi:
 
-**Syahrul Al Zayyan**  
-Data Analyst | HR Analytics | Business Intelligence  
+- **Nama:** Syahrul Al Zayyan  
+- **Role:** Data Analyst & AI Enthusiast  
+- **Email / LinkedIn / Portfolio (opsional — bisa saya tambahkan jika diberikan)**  
 
 ---
 
-> ⭐ Jika Anda menyukai proyek ini, jangan lupa berikan star pada repository!
+⭐ *If you like this project, please give this repo a star on GitHub!*
