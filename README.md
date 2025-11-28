@@ -1,97 +1,117 @@
-# HR Dashboard Project
+# 🧑‍💼 HR Attrition Analytics – Power BI Dashboard
 
-A comprehensive HR analytics dashboard solution designed to provide insights into employee attrition, performance, and key human resources metrics. This project leverages Power BI to visualize critical HR data for better decision-making.
-
-## 📊 Overview
-
-The HR Dashboard project provides an interactive and visually appealing interface to analyze employee data, with a particular focus on understanding and predicting employee attrition. The dashboard enables HR professionals and management to make data-driven decisions based on key metrics and trends.
-
-## 🚀 Features
-
-- **Employee Attrition Analysis**: Deep dive into factors influencing employee turnover
-- **Performance Metrics**: Track employee performance indicators
-- **Demographic Insights**: Analyze workforce composition and diversity
-- **Compensation Analysis**: Visualize salary structures and compensation trends
-- **Engagement Metrics**: Monitor employee satisfaction and engagement levels
-- **Interactive Visualizations**: Filter and drill-down capabilities for detailed analysis
-
-## 📁 Project Structure
-
-```
-HR Dashboard/
-├── Dashboard/
-│   └── HR Analyst.pbix          # Power BI Dashboard File
-├── Dataset/
-│   └── WA_Fn-UseC_-HR-Employee-Attrition.csv    # Source Dataset
-└── Images/
-    ├── Attrition Report Dashboard.png
-    ├── Root Cause Analysis Dashboard.png
-    └── Summary Dashboard.png
-```
-
-## 📈 Dashboard Screenshots
-
-### 1. Summary Dashboard
-![Summary Dashboard](Images/Summary Dashboard.png)
-*High-level overview of key HR metrics and employee statistics*
-
-### 2. Attrition Report Dashboard
-![Attrition Report Dashboard](Images/Attrition Report Dashboard.png)
-*Detailed analysis of employee attrition patterns and contributing factors*
-
-### 3. Root Cause Analysis Dashboard
-![Root Cause Analysis Dashboard](Images/Root Cause Analysis Dashboard.png)
-*In-depth analysis to identify root causes of employee turnover*
-
-## 📥 Dataset Information
-
-The dashboard is built using the "WA_Fn-UseC_-HR-Employee-Attrition.csv" dataset which includes various employee attributes such as:
-- Personal information (Age, Gender, Education, Marital Status)
-- Employment details (Department, Job Role, Years of Service)
-- Compensation data (Monthly Income, Percent Salary Hike)
-- Performance metrics (Performance Rating, Work-Life Balance)
-- Attrition indicators (Attrition status, Years at Company, etc.)
-
-## 🛠️ Technologies Used
-
-- **Power BI**: For creating interactive dashboards and visualizations
-- **CSV Data Format**: For data storage and import
-- **Power Query**: For data transformation and cleaning
-
-## 📋 Requirements
-
-- Power BI Desktop (latest version recommended)
-- Microsoft Excel (for data validation, if needed)
-
-## 🚀 Getting Started
-
-1. **Download Power BI Desktop** from [Microsoft Power BI](https://powerbi.microsoft.com/desktop/)
-2. **Clone or download** this repository to your local machine
-3. **Open** the `HR Analyst.pbix` file in Power BI Desktop
-4. **Update data source** if needed to point to your local copy of the dataset
-5. **Refresh and explore** the dashboard
-
-## 📊 Key Insights
-
-This dashboard helps identify:
-- Key factors contributing to employee attrition
-- High-risk employee segments
-- Department-wise performance trends
-- Compensation gaps and equity issues
-- Employee engagement patterns
-
-## 🤝 Contributing
-
-Contributions to enhance the dashboard are welcome! Feel free to fork this repository and submit pull requests for:
-- New visualization ideas
-- Improved data models
-- Additional KPIs and metrics
-- Bug fixes and performance improvements
-
-## 📞 Contact
-
-For questions or suggestions regarding this HR Dashboard project, please feel free to contact me through GitHub.
+Proyek ini berisi analisis mendalam mengenai Employee Attrition (karyawan keluar) pada sebuah perusahaan. Dashboard ini dikembangkan untuk memberikan pemahaman yang lebih baik kepada bagian HR terkait faktor penyebab attrition, area yang berisiko tinggi, serta rekomendasi solusi yang berbasis data.
 
 ---
 
-**Note**: The dashboard is built using a sample HR dataset and can be customized for specific organizational needs by replacing the data source with your actual HR data.
+## 📊 Dashboard Collection
+
+### 1️⃣ Summary Dashboard
+Insight utama:
+- Total Employee
+- Attrition Rate
+- High Risk Employee %
+- Avg. Tenure & Salary
+- Attrition berdasarkan Tenure, Age Group, Salary Bracket, Department & Job Role Risk
+
+📷 Screenshot  
+![Summary Dashboard](./assets/Summary%20Dashboard.png)
+
+---
+
+### 2️⃣ Root Cause Analysis Dashboard
+Fokus faktor penyebab attrition:
+- Overtime vs Attrition Impact
+- Salary Gap (Stay vs Attrition)
+- Business Travel Pressure
+- Irregular Working Hours
+- Satisfaction Radar:
+  - Job
+  - Environment
+  - Relationship
+  - Work-Life Balance
+  - Performance
+
+📷 Screenshot  
+![Root Cause Analysis Dashboard](./assets/Root%20Cause%20Analysis%20Dashboard.png)
+
+---
+
+### 3️⃣ Attrition Report Dashboard
+Analisis mendalam posisi & departemen paling berisiko:
+- Attrition Rate %
+- High Risk Employee %
+- Performance Score
+- Lowest Satisfaction Position
+- Salary Impact
+
+📷 Screenshot  
+![Attrition Report Dashboard](./assets/Attrition%20Report%20Dashboard.png)
+
+---
+
+## 🧠 Key Business Insights
+
+| Temuan Utama | Dampak pada Bisnis | Arah Strategi |
+|-------------|------------------|---------------|
+| Attrition tertinggi di Sales & R&D | Pengaruh penjualan & inovasi | Program engagement khusus untuk kedua departemen |
+| Overtime tinggi → Resign meningkat signifikan | Risiko burnout | Workload balancing & Overtime control |
+| Salary keluar lebih rendah daripada yang bertahan | Perasaan undervalued | Salary band restructuring |
+| Job Satisfaction & Environment Satisfaction rendah pada posisi teknis | Produktivitas & motivasi turun | Leadership, environment & career development improvement |
+| Tenure < 3 tahun paling berisiko resign | Hilangnya talent lebih cepat | Retention program pada 3 tahun pertama |
+
+---
+
+## 🛠 Dataset
+
+- WA_Fn-UseC_-HR-Employee-Attrition.csv  
+(IBM HR Analytics Employee Attrition Dataset)
+
+Fields relevan:
+Attrition, Department, JobRole, MonthlyIncome, JobSatisfaction,
+PerformanceRating, WorkLifeBalance, EnvironmentSatisfaction,
+YearsAtCompany, Overtime, BusinessTravel
+
+
+---
+
+## 🧾 Tools & Technology
+
+| Tools | Fungsi |
+|------|--------|
+| Power BI Desktop | ETL + Dashboard |
+| Custom Visuals | Visualisasi analitik lanjutan |
+| DAX Measures | Perhitungan KPI |
+
+Custom visuals diambil dari:
+> https://github.com/DataChant/PowerBI-Visuals-AppSource/tree/main/All%20Visuals
+
+---
+
+## 🎯 Business Goals
+
+- Menurunkan attrition rate secara berkelanjutan
+- Mengidentifikasi talent berisiko tinggi
+- Memberikan HR decision support yang terukur
+- Menyusun strategi employee retention jangka panjang
+
+---
+
+## 🔄 Project Roadmap
+
+- [x] Summary Dashboard
+- [x] Root Cause Analysis Dashboard
+- [x] Attrition Report by Department & Job Role
+- [ ] Action Plan Dashboard (HR Executable Strategy)
+- [ ] Power BI Service Automation
+
+---
+
+## 👨‍💻 Author
+
+**Syahrul Al Zayyan**  
+Data Analyst | HR Analytics | Business Intelligence  
+
+---
+
+> ⭐ Jika Anda menyukai proyek ini, jangan lupa berikan star pada repository!
