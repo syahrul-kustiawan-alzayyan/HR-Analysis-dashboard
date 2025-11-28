@@ -15,7 +15,7 @@ Insight utama:
 - Attrition berdasarkan Tenure, Age Group, Salary Bracket, Department & Job Role Risk
 
 📷 Screenshot  
-![Summary Dashboard](./assets/Summary%20Dashboard.png)
+![Summary Dashboard](Images/Summary Dashboard.png)
 
 ---
 
