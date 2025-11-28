@@ -44,9 +44,9 @@ Dashboard ini dikembangkan untuk membantu HR mengambil keputusan berbasis **data
 
 ## 📈 Dashboard Preview
 
-### 1️⃣ Attrition Report Dashboard
-Analitik per posisi: attrition %, high-risk %, performance, dan satisfaction score  
-![Attrition Report Dashboard](Images/Attrition%20Report%20Dashboard.png)
+### 1️⃣ Summary Dashboard
+Overall company attrition metrics dan distribusi demografi  
+![Summary Dashboard](Images/Summary%20Dashboard.png)
 
 ---
 
@@ -56,9 +56,9 @@ Mengidentifikasi akumulasi faktor penyebab attrition
 
 ---
 
-### 3️⃣ Summary Dashboard
-Overall company attrition metrics dan distribusi demografi  
-![Summary Dashboard](Images/Summary%20Dashboard.png)
+### 3️⃣ Attrition Report Dashboard
+Analitik per posisi: attrition %, high-risk %, performance, dan satisfaction score  
+![Attrition Report Dashboard](Images/Attrition%20Report%20Dashboard.png)
 
 ---
 
